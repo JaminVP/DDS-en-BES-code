@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
+project(DimensionalDataSource)
+find_package(PCL 1.7.1 REQUIRED COMPONENTS common io visualization geometry search)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS} ~/Kinect/pcl/3rdparty/libjpeg-master/build /usr/local/lib)
+add_definitions(${PCL_DEFINITIONS})
+add_executable(DimensionalDataSource main.cpp)
+target_link_libraries(DimensionalDataSource ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_VISUALISATION_LIBRARIES} ${PCL_VISUALIZATION_LIBRARIES} jpeg png)

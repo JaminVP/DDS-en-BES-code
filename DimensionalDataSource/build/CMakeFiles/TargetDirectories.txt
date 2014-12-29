@@ -1,0 +1,3 @@
+/Users/Jamin/Kinect/DimensionalDataSource/build/CMakeFiles/ALL_BUILD.dir
+/Users/Jamin/Kinect/DimensionalDataSource/build/CMakeFiles/DimensionalDataSource.dir
+/Users/Jamin/Kinect/DimensionalDataSource/build/CMakeFiles/ZERO_CHECK.dir

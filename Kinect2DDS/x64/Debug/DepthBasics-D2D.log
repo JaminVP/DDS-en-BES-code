@@ -1,0 +1,15 @@
+﻿Build started 25/04/2014 11:51:43.
+     1>Project "C:\Users\CostelloUser\Documents\MarchSDKUpdate\K4W-v2.0-DevPreview1403-Samples\Native\DepthBasics-D2D\DepthBasics-D2D.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\CostelloUser\Documents\boost_1_55_0 /I"C:\Users\CostelloUser\Documents\libjpeg-master" /Zi /nologo /W1 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt DepthBasics.cpp
+         DepthBasics.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\CostelloUser\Documents\MarchSDKUpdate\K4W-v2.0-DevPreview1403-Samples\Native\x64\Debug\DepthBasics-D2D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\CostelloUser\Documents\boost_1_55_0\lib64-msvc-11.0" /LIBPATH:"C:\Users\CostelloUser\Documents\libjpeg-master\build\Release" kinect20.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib jpeg.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\CostelloUser\Documents\MarchSDKUpdate\K4W-v2.0-DevPreview1403-Samples\Native\x64\Debug\DepthBasics-D2D.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\CostelloUser\Documents\MarchSDKUpdate\K4W-v2.0-DevPreview1403-Samples\Native\x64\Debug\DepthBasics-D2D.lib" /MACHINE:X64 x64\Debug\DepthBasics.res
+         x64\Debug\DepthBasics.obj
+         x64\Debug\ImageRenderer.obj
+         DepthBasics-D2D.vcxproj -> C:\Users\CostelloUser\Documents\MarchSDKUpdate\K4W-v2.0-DevPreview1403-Samples\Native\x64\Debug\DepthBasics-D2D.exe
+     1>Done Building Project "C:\Users\CostelloUser\Documents\MarchSDKUpdate\K4W-v2.0-DevPreview1403-Samples\Native\DepthBasics-D2D\DepthBasics-D2D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.59
