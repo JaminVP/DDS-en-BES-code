@@ -1,0 +1,43 @@
+\hypertarget{_j_p_e_g_source_8h}{\section{J\+P\+E\+G\+Source.\+h File Reference}
+\label{_j_p_e_g_source_8h}\index{J\+P\+E\+G\+Source.\+h@{J\+P\+E\+G\+Source.\+h}}
+}
+
+
+Class of Dimensional\+Data\+Source which handles 12-\/bit J\+P\+E\+G-\/compression of single depthframe.  
+
+
+{\ttfamily \#include \char`\"{}Depth\+Source.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$jpeglib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_j_p_e_g_source}{J\+P\+E\+G\+Source}
+\begin{DoxyCompactList}\small\item\em Class that extends the abstract class \hyperlink{class_depth_source}{Depth\+Source}. Links an Open\+N\+I Grabber-\/interface to a private callback method. This method compresses the received frame with 12-\/bit J\+P\+E\+G and sends it to the backend server using a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_j_p_e_g_source_8h_a088be14560f0b7851d0ed431537a288f}{void {\bfseries init\+\_\+buffer} (jpeg\+\_\+compress\+\_\+struct $\ast$cinfo)}\label{_j_p_e_g_source_8h_a088be14560f0b7851d0ed431537a288f}
+
+\item 
+\hypertarget{_j_p_e_g_source_8h_a728b37906d96da4d50d89254c00068d0}{boolean {\bfseries empty\+\_\+buffer} (jpeg\+\_\+compress\+\_\+struct $\ast$cinfo)}\label{_j_p_e_g_source_8h_a728b37906d96da4d50d89254c00068d0}
+
+\item 
+\hypertarget{_j_p_e_g_source_8h_a13b52eec4c8f53826c598b33d4d7d6c1}{void {\bfseries term\+\_\+buffer} (jpeg\+\_\+compress\+\_\+struct $\ast$cinfo)}\label{_j_p_e_g_source_8h_a13b52eec4c8f53826c598b33d4d7d6c1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class of Dimensional\+Data\+Source which handles 12-\/bit J\+P\+E\+G-\/compression of single depthframe. 
+
+\begin{DoxyAuthor}{Author}
+Jamin Van Parys (\href{mailto:jaminvp@gmail.com}{\tt jaminvp@gmail.\+com})
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16/03/2015 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

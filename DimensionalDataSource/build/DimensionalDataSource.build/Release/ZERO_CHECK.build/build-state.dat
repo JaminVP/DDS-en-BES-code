@@ -1,29 +1,0 @@
-TZERO_CHECK
-v6
-r1
-cCheck dependencies
-cPhaseScriptExecution CMake\ Rules /Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ZERO_CHECK.build/Script-C4F52D7CD3CF430684769DAB.sh
-
-N/Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ZERO_CHECK.build/Script-C4F52D7CD3CF430684769DAB.sh
-c00000000535A5DDC00000000000000B9
-t1398431196
-s185
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese9d66784cd20b941^0f466884cd20b941^---0#1#1#--18"Check dependencies36"4412FE87-166E-4AD2-9C52-DE29932B1BD5-
-
-CPhaseScriptExecution CMake\ Rules /Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ZERO_CHECK.build/Script-C4F52D7CD3CF430684769DAB.sh
-s421580164.406975
-e421580164.502316
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ZERO_CHECK.build/Script-C4F52D7CD3CF430684769DAB.sh
-oecho ""
-o
-omake -f /Users/Jamin/Kinect/DimensionalDataSource/build/CMakeScripts/ReRunCMake.make
-omake[1]: `/Users/Jamin/Kinect/DimensionalDataSource/build/CMakeFiles/cmake.check_cache' is up to date.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'127"PhaseScriptExecution CMake\ Rules build/DimensionalDataSource.build/Release/ZERO_CHECK.build/Script-C4F52D7CD3CF430684769DAB.sh008f6884cd20b941^6b998084cd20b941^-197"echo ""make -f /Users/Jamin/Kinect/DimensionalDataSource/build/CMakeScripts/ReRunCMake.makemake[1]: `/Users/Jamin/Kinect/DimensionalDataSource/build/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-421580164#0#8#-0#-----2@85"make -f /Users/Jamin/Kinect/DimensionalDataSource/build/CMakeScripts/ReRunCMake.make-421580164#9#85#-0#-----2@103"make[1]: `/Users/Jamin/Kinect/DimensionalDataSource/build/CMakeFiles/cmake.check_cache' is up to date.-421580164#94#103#-0#-----0#0#1#--328"PhaseScriptExecution CMake\ Rules build/DimensionalDataSource.build/Release/ZERO_CHECK.build/Script-C4F52D7CD3CF430684769DAB.sh    cd /Users/Jamin/Kinect/DimensionalDataSource    /bin/sh -c /Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ZERO_CHECK.build/Script-C4F52D7CD3CF430684769DAB.sh36"321CFD1D-D287-43B6-9DAD-EC86DF291BE6-
-bD986CA96-2B5C-4E31-8FE7-11523EEAADF5
-

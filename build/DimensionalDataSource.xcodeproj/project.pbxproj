@@ -1,0 +1,1375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0EC7535B2C20431590C650D8 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 486DDE774FDC4E79AD4F7608 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8DA60972F3D04CBFABF400A4 /* CMake Rules */,
+			);
+			dependencies = (
+				957D39AFB5CF41FA8CF61BAB /* PBXTargetDependency */,
+				D43EF6C0042545249AF3980E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		CDC929992CA84A7E80D01A48 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2CACCF0E4D9046959F406F2A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C4F52D7CD3CF430684769DAB /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		61C6B57DD65347C6A042D631 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72B1A551959640AAA805FD41 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		340B3A72F1E6430E8B34EB1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37BC2C260A64780BA912CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86DA65D446E94B3AA86DBA9A;
+			remoteInfo = DimensionalDataSource;
+		};
+		D5585F9CA6924B02B7F0C462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37BC2C260A64780BA912CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC929992CA84A7E80D01A48;
+			remoteInfo = ZERO_CHECK;
+		};
+		F70FED97A4E34B0083CAF962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37BC2C260A64780BA912CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC929992CA84A7E80D01A48;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29A215DD0CB14BF8B43BDD8A /* DimensionalDataSource */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = DimensionalDataSource; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B1A551959640AAA805FD41 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		E17B4519CAC048E79A05E2DF /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ED35A34C1ABAE43500A12689 /* JPEGStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPEGStrategy.h; sourceTree = "<group>"; };
+		ED89D6E61ABAD9EA00596DD5 /* CompressionStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressionStrategy.h; sourceTree = "<group>"; };
+		ED8C84441AB6E377008EE3C2 /* DepthSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DepthSource.h; sourceTree = "<group>"; };
+		EDF092EA1ABAE84E00F70BBB /* OpenNISource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenNISource.h; sourceTree = "<group>"; };
+		EDF092EB1ABAEACD00F70BBB /* PNGStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNGStrategy.h; sourceTree = "<group>"; };
+		EDF092EC1ABB012800F70BBB /* KinectV2Source.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KinectV2Source.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		14458D9C7CAF4592B7728A0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		22DF32C2B6B04E8DB10A8758 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2BE1FD830DBF4D3AAD5FB28F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29A215DD0CB14BF8B43BDD8A /* DimensionalDataSource */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FB0AE88134A4804AB39AE3D = {
+			isa = PBXGroup;
+			children = (
+				EDF092EC1ABB012800F70BBB /* KinectV2Source.h */,
+				EDF092EB1ABAEACD00F70BBB /* PNGStrategy.h */,
+				EDF092EA1ABAE84E00F70BBB /* OpenNISource.h */,
+				ED35A34C1ABAE43500A12689 /* JPEGStrategy.h */,
+				ED89D6E61ABAD9EA00596DD5 /* CompressionStrategy.h */,
+				ED8C84441AB6E377008EE3C2 /* DepthSource.h */,
+				546060F597F944D9A531A928 /* Sources */,
+				14458D9C7CAF4592B7728A0B /* Resources */,
+				2BE1FD830DBF4D3AAD5FB28F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51BC084700474BC7B6981BA1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				72B1A551959640AAA805FD41 /* main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		546060F597F944D9A531A928 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				67889DBE34DC46D7A9BE040A /* ALL_BUILD */,
+				C1B57A0C244B4D42B1637B53 /* DimensionalDataSource */,
+				C68A7D79853046C6822E8A9D /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		67889DBE34DC46D7A9BE040A /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B8BABA7ECBD74855ABC04B6A /* CMake Rules */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B8BABA7ECBD74855ABC04B6A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C1B57A0C244B4D42B1637B53 /* DimensionalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				51BC084700474BC7B6981BA1 /* Source Files */,
+			);
+			name = DimensionalDataSource;
+			sourceTree = "<group>";
+		};
+		C68A7D79853046C6822E8A9D /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				22DF32C2B6B04E8DB10A8758 /* CMake Rules */,
+				E17B4519CAC048E79A05E2DF /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86DA65D446E94B3AA86DBA9A /* DimensionalDataSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14FA9A8E30EF41BCA32B13CA /* Build configuration list for PBXNativeTarget "DimensionalDataSource" */;
+			buildPhases = (
+				6576C7A6A8A54C97B63BAA4D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A897A781B87B4C789DB5C4A0 /* PBXTargetDependency */,
+			);
+			name = DimensionalDataSource;
+			productName = DimensionalDataSource;
+			productReference = 29A215DD0CB14BF8B43BDD8A /* DimensionalDataSource */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E37BC2C260A64780BA912CDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 5F353F99C06A4B209C23CCC9 /* Build configuration list for PBXProject "DimensionalDataSource" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FB0AE88134A4804AB39AE3D;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				0EC7535B2C20431590C650D8 /* ALL_BUILD */,
+				86DA65D446E94B3AA86DBA9A /* DimensionalDataSource */,
+				CDC929992CA84A7E80D01A48 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DA60972F3D04CBFABF400A4 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Jamin/Kinect/DimensionalDataSource/build -f /Users/Jamin/Kinect/DimensionalDataSource/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C4F52D7CD3CF430684769DAB /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Jamin/Kinect/DimensionalDataSource/build -f /Users/Jamin/Kinect/DimensionalDataSource/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6576C7A6A8A54C97B63BAA4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C6B57DD65347C6A042D631 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		957D39AFB5CF41FA8CF61BAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86DA65D446E94B3AA86DBA9A /* DimensionalDataSource */;
+			targetProxy = 340B3A72F1E6430E8B34EB1A /* PBXContainerItemProxy */;
+		};
+		A897A781B87B4C789DB5C4A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC929992CA84A7E80D01A48 /* ZERO_CHECK */;
+			targetProxy = F70FED97A4E34B0083CAF962 /* PBXContainerItemProxy */;
+		};
+		D43EF6C0042545249AF3980E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC929992CA84A7E80D01A48 /* ZERO_CHECK */;
+			targetProxy = D5585F9CA6924B02B7F0C462 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04A98C7B0C67426796EFD988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build/build;
+			};
+			name = Debug;
+		};
+		3D017C5B495D4C51A823EDAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		3DBA211656524B9C978184C5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		3EF6BD6C55694EB3887DFA91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build/build;
+			};
+			name = Release;
+		};
+		40D6700CB197435E86AC508B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		46E0D271757642DDA76925F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		48941F367D3F4E5F84F5ED08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		501045DCF66B4D2995B326A8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /usr/local/Cellar/qt/4.8.5/lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/Jamin/Kinect/pcl/build/lib /Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build /usr/local/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/Jamin/Kinect/pcl/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/Jamin/Kinect/pcl/build/lib,
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build",
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "         -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "         -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_visualization.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_kdtree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					/usr/lib/libOpenNI.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_visualization.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_kdtree.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					"/usr/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib",
+					"-framework",
+					QtGui,
+					"-framework",
+					QtSql,
+					"-framework",
+					QtCore,
+					"-lobjc",
+					"/usr/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtksys.5.10.1.dylib",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DimensionalDataSource;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		7D8B4888E88842C9B67DCDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /usr/local/Cellar/qt/4.8.5/lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/Jamin/Kinect/pcl/build/lib /Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build /usr/local/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/Jamin/Kinect/pcl/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/Jamin/Kinect/pcl/build/lib,
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build",
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "      -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "      -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_visualization.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_kdtree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					/usr/lib/libOpenNI.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_visualization.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_kdtree.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					"/usr/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib",
+					"-framework",
+					QtGui,
+					"-framework",
+					QtSql,
+					"-framework",
+					QtCore,
+					"-lobjc",
+					"/usr/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtksys.5.10.1.dylib",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DimensionalDataSource;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		9C9ABD892F69459180DD5C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		A17C910552BC43D296382F57 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C3D5CA1970124345965740AA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		CFABF8FD655445FCAEB81060 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E03A94FA981942BE9996F8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /usr/local/Cellar/qt/4.8.5/lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/Jamin/Kinect/pcl/build/lib /Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build /usr/local/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/Jamin/Kinect/pcl/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/Jamin/Kinect/pcl/build/lib,
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build",
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "      ";
+				OTHER_CPLUSPLUSFLAGS = "      ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_visualization.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_common.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_kdtree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_common.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					/usr/lib/libOpenNI.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_io.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_octree.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_visualization.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Debug/libpcl_kdtree.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					"/usr/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib",
+					"-framework",
+					QtGui,
+					"-framework",
+					QtSql,
+					"-framework",
+					QtCore,
+					"-lobjc",
+					"/usr/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtksys.5.10.1.dylib",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DimensionalDataSource;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		E5D40189FACA4BDE8B552F0A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /usr/local/Cellar/qt/4.8.5/lib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					DISABLE_PCAP,
+					DISABLE_PNG,
+					EIGEN_USE_NEW_STDVECTOR,
+					EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET,
+					FLANN_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/vtk-5.10",
+					/Users/Jamin/Kinect/pcl/build/include,
+					/usr/local/include/eigen3,
+					/usr/local/include,
+					/Users/Jamin/Kinect/pcl/common/include,
+					/Users/Jamin/Kinect/pcl/octree/include,
+					/usr/include/ni,
+					/Users/Jamin/Kinect/pcl/io/include,
+					/Users/Jamin/Kinect/pcl/kdtree/include,
+					/Users/Jamin/Kinect/pcl/visualization/include,
+					/Users/Jamin/Kinect/pcl/geometry/include,
+					/Users/Jamin/Kinect/pcl/search/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/Jamin/Kinect/pcl/build/lib /Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build /usr/local/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/Jamin/Kinect/pcl/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/Users/Jamin/Kinect/pcl/build/lib,
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"/Users/Jamin/Kinect/pcl/3rdparty/libjpeg-master/build",
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "      -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "      -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_visualization.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/lib/libOpenNI.dylib,
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_kdtree.1.7.1.dylib,
+					"/usr/local/lib/libboost_system-mt.dylib",
+					"/usr/local/lib/libboost_filesystem-mt.dylib",
+					"/usr/local/lib/libboost_thread-mt.dylib",
+					"/usr/local/lib/libboost_date_time-mt.dylib",
+					"/usr/local/lib/libboost_iostreams-mt.dylib",
+					"/usr/local/lib/libboost_serialization-mt.dylib",
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_common.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					/usr/lib/libOpenNI.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_io.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_octree.1.7.1.dylib,
+					/usr/local/lib/libflann_cpp_s.a,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_visualization.1.7.1.dylib,
+					/Users/Jamin/Kinect/pcl/build/lib/Release/libpcl_kdtree.1.7.1.dylib,
+					"-ljpeg",
+					"-lpng",
+					"/usr/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib",
+					"-framework",
+					QtGui,
+					"-framework",
+					QtSql,
+					"-framework",
+					QtCore,
+					"-lobjc",
+					"/usr/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib",
+					"/usr/local/lib/vtk-5.10/libvtksys.5.10.1.dylib",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DimensionalDataSource;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F485F94923024746BDC64961 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = /Users/Jamin/Kinect/DimensionalDataSource/build/build;
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14FA9A8E30EF41BCA32B13CA /* Build configuration list for PBXNativeTarget "DimensionalDataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E03A94FA981942BE9996F8F6 /* Debug */,
+				7D8B4888E88842C9B67DCDC5 /* Release */,
+				E5D40189FACA4BDE8B552F0A /* MinSizeRel */,
+				501045DCF66B4D2995B326A8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2CACCF0E4D9046959F406F2A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D017C5B495D4C51A823EDAF /* Debug */,
+				9C9ABD892F69459180DD5C29 /* Release */,
+				C3D5CA1970124345965740AA /* MinSizeRel */,
+				CFABF8FD655445FCAEB81060 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		486DDE774FDC4E79AD4F7608 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48941F367D3F4E5F84F5ED08 /* Debug */,
+				46E0D271757642DDA76925F1 /* Release */,
+				40D6700CB197435E86AC508B /* MinSizeRel */,
+				A17C910552BC43D296382F57 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F353F99C06A4B209C23CCC9 /* Build configuration list for PBXProject "DimensionalDataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A98C7B0C67426796EFD988 /* Debug */,
+				3EF6BD6C55694EB3887DFA91 /* Release */,
+				F485F94923024746BDC64961 /* MinSizeRel */,
+				3DBA211656524B9C978184C5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E37BC2C260A64780BA912CDF /* Project object */;
+}

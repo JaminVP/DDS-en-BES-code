@@ -1,0 +1,39 @@
+\hypertarget{_depth_server_8h}{\section{Depth\+Server.\+h File Reference}
+\label{_depth_server_8h}\index{Depth\+Server.\+h@{Depth\+Server.\+h}}
+}
+
+
+Class which receives compressed frames through boost\+::asio.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$boost/bind.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/asio.\+hpp$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$pcl/io/pcd\+\_\+io.\+h$>$}\\*
+{\ttfamily \#include $<$pcl/visualization/cloud\+\_\+viewer.\+h$>$}\\*
+{\ttfamily \#include $<$pcl/filters/voxel\+\_\+grid.\+h$>$}\\*
+{\ttfamily \#include $<$pcl/filters/statistical\+\_\+outlier\+\_\+removal.\+h$>$}\\*
+{\ttfamily \#include $<$pcl/io/pcd\+\_\+grabber.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Depth\+Client.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$jpeglib.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_depth_server}{Depth\+Server}
+\begin{DoxyCompactList}\small\item\em Class that serves as a receiver of depth data. The depth data is to be decompressed by a specified Decompression\+Strategy, converted to a Pointcloud and then saved to disk to be processed later. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which receives compressed frames through boost\+::asio. 
+
+\begin{DoxyAuthor}{Author}
+Jamin Van Parys (\href{mailto:jaminvp@gmail.com}{\tt jaminvp@gmail.\+com}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/04/2015 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

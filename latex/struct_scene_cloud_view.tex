@@ -1,0 +1,102 @@
+\hypertarget{struct_scene_cloud_view}{\section{Scene\+Cloud\+View Struct Reference}
+\label{struct_scene_cloud_view}\index{Scene\+Cloud\+View@{Scene\+Cloud\+View}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_scene_cloud_view_a0296162bfcc96b5b8af6b4dd11cf5b34}{enum \{ {\bfseries G\+P\+U\+\_\+\+Connected6} = 0, 
+{\bfseries C\+P\+U\+\_\+\+Connected6} = 1, 
+{\bfseries C\+P\+U\+\_\+\+Connected26} = 2
+ \}}\label{struct_scene_cloud_view_a0296162bfcc96b5b8af6b4dd11cf5b34}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_scene_cloud_view_a7cd6f6839d610c4653847b3b1c34880c}{void {\bfseries draw\+Camera} (Eigen\+::\+Affine3f \&pose, const string \&name, double r, double g, double b)}\label{struct_scene_cloud_view_a7cd6f6839d610c4653847b3b1c34880c}
+
+\item 
+\hypertarget{struct_scene_cloud_view_aa62c8ada85b5cb6888f5826d20c1bce7}{void {\bfseries remove\+Camera} (const string \&name)}\label{struct_scene_cloud_view_aa62c8ada85b5cb6888f5826d20c1bce7}
+
+\item 
+\hypertarget{struct_scene_cloud_view_aa13f0f30c1f98c7996c73be747716603}{void {\bfseries display\+I\+C\+P\+State} (Kinfu\+Tracker \&kinfu, bool was\+\_\+lost\+\_\+)}\label{struct_scene_cloud_view_aa13f0f30c1f98c7996c73be747716603}
+
+\item 
+\hypertarget{struct_scene_cloud_view_abf6b5dc76d3dd5b749f4678a396a1dcb}{void {\bfseries show} (Kinfu\+Tracker \&kinfu, bool integrate\+\_\+colors)}\label{struct_scene_cloud_view_abf6b5dc76d3dd5b749f4678a396a1dcb}
+
+\item 
+\hypertarget{struct_scene_cloud_view_ad1643724f930b5ad0e1421c9315be25b}{void {\bfseries toggle\+Cube} (const Eigen\+::\+Vector3f \&size)}\label{struct_scene_cloud_view_ad1643724f930b5ad0e1421c9315be25b}
+
+\item 
+\hypertarget{struct_scene_cloud_view_af9ba10707d975a4217188fe27f4674c7}{void {\bfseries toggle\+Extraction\+Mode} ()}\label{struct_scene_cloud_view_af9ba10707d975a4217188fe27f4674c7}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a4a905792b1bc9fbce3f7cffe68e6acad}{void {\bfseries toggle\+Normals} ()}\label{struct_scene_cloud_view_a4a905792b1bc9fbce3f7cffe68e6acad}
+
+\item 
+\hypertarget{struct_scene_cloud_view_aa424f942a142f1c0523529cf936ca6c8}{void {\bfseries clear\+Clouds} (bool print\+\_\+message=false)}\label{struct_scene_cloud_view_aa424f942a142f1c0523529cf936ca6c8}
+
+\item 
+\hypertarget{struct_scene_cloud_view_ac898c36f22b4ab497377682305cd99e4}{void {\bfseries show\+Mesh} (Kinfu\+Tracker \&kinfu, bool)}\label{struct_scene_cloud_view_ac898c36f22b4ab497377682305cd99e4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_scene_cloud_view_ac613a3b8c4076cf63e5ae8bd9a18276e}{int {\bfseries extraction\+\_\+mode\+\_\+}}\label{struct_scene_cloud_view_ac613a3b8c4076cf63e5ae8bd9a18276e}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a2cf11e520aecc6ff80d537dbab502010}{bool {\bfseries compute\+\_\+normals\+\_\+}}\label{struct_scene_cloud_view_a2cf11e520aecc6ff80d537dbab502010}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a628fc9ce9443727daf62dad825640d10}{bool {\bfseries valid\+\_\+combined\+\_\+}}\label{struct_scene_cloud_view_a628fc9ce9443727daf62dad825640d10}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a5c8c52c248c0b483420ded4ed8c3cee7}{bool {\bfseries cube\+\_\+added\+\_\+}}\label{struct_scene_cloud_view_a5c8c52c248c0b483420ded4ed8c3cee7}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a4d8d93d1f530b0ff7044f09b8c5cc773}{Eigen\+::\+Affine3f {\bfseries viewer\+\_\+pose\+\_\+}}\label{struct_scene_cloud_view_a4d8d93d1f530b0ff7044f09b8c5cc773}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a3a07092aaea7881881ac2c4f41cd5e90}{visualization\+::\+P\+C\+L\+Visualizer {\bfseries cloud\+\_\+viewer\+\_\+}}\label{struct_scene_cloud_view_a3a07092aaea7881881ac2c4f41cd5e90}
+
+\item 
+\hypertarget{struct_scene_cloud_view_aaee4ebfad25189d85d7c9f3265537e31}{Point\+Cloud$<$ Point\+X\+Y\+Z $>$\+::Ptr {\bfseries cloud\+\_\+ptr\+\_\+}}\label{struct_scene_cloud_view_aaee4ebfad25189d85d7c9f3265537e31}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a7034a0040241e9b19d9d26282a83d4a5}{Point\+Cloud$<$ Normal $>$\+::Ptr {\bfseries normals\+\_\+ptr\+\_\+}}\label{struct_scene_cloud_view_a7034a0040241e9b19d9d26282a83d4a5}
+
+\item 
+\hypertarget{struct_scene_cloud_view_af4e1afd4cf687f03f74a053d917908ad}{Device\+Array$<$ Point\+X\+Y\+Z $>$ {\bfseries cloud\+\_\+buffer\+\_\+device\+\_\+}}\label{struct_scene_cloud_view_af4e1afd4cf687f03f74a053d917908ad}
+
+\item 
+\hypertarget{struct_scene_cloud_view_abc47fcd6b165052111ee0f13bad7c494}{Device\+Array$<$ Normal $>$ {\bfseries normals\+\_\+device\+\_\+}}\label{struct_scene_cloud_view_abc47fcd6b165052111ee0f13bad7c494}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a06b25d903ac89d7b74587d0ba462a8b2}{Point\+Cloud$<$ Point\+Normal $>$\+::Ptr {\bfseries combined\+\_\+ptr\+\_\+}}\label{struct_scene_cloud_view_a06b25d903ac89d7b74587d0ba462a8b2}
+
+\item 
+\hypertarget{struct_scene_cloud_view_abbbdc32d1bb7209155c3cb3825f27f8c}{Device\+Array$<$ Point\+Normal $>$ {\bfseries combined\+\_\+device\+\_\+}}\label{struct_scene_cloud_view_abbbdc32d1bb7209155c3cb3825f27f8c}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a2dff41d6e0d5aa60d2aaf9093f8c426c}{Device\+Array$<$ R\+G\+B $>$ {\bfseries point\+\_\+colors\+\_\+device\+\_\+}}\label{struct_scene_cloud_view_a2dff41d6e0d5aa60d2aaf9093f8c426c}
+
+\item 
+\hypertarget{struct_scene_cloud_view_ab36241eff4589d5f71d6b29479ed515d}{Point\+Cloud$<$ R\+G\+B $>$\+::Ptr {\bfseries point\+\_\+colors\+\_\+ptr\+\_\+}}\label{struct_scene_cloud_view_ab36241eff4589d5f71d6b29479ed515d}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a41caf132565c412c864df30073434128}{Marching\+Cubes\+::\+Ptr {\bfseries marching\+\_\+cubes\+\_\+}}\label{struct_scene_cloud_view_a41caf132565c412c864df30073434128}
+
+\item 
+\hypertarget{struct_scene_cloud_view_af3eb6dd80adb3f9f1fa8274dedbb328a}{Device\+Array$<$ Point\+X\+Y\+Z $>$ {\bfseries triangles\+\_\+buffer\+\_\+device\+\_\+}}\label{struct_scene_cloud_view_af3eb6dd80adb3f9f1fa8274dedbb328a}
+
+\item 
+\hypertarget{struct_scene_cloud_view_a9392ddca29861ec78da5a31fc553988d}{boost\+::shared\+\_\+ptr\\*
+$<$ pcl\+::\+Polygon\+Mesh $>$ {\bfseries mesh\+\_\+ptr\+\_\+}}\label{struct_scene_cloud_view_a9392ddca29861ec78da5a31fc553988d}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kinfu\+L\+S\+\_\+app.\+cpp\end{DoxyCompactItemize}

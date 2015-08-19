@@ -1,0 +1,88 @@
+\hypertarget{class_kinect_v2_source}{\section{Kinect\+V2\+Source Class Reference}
+\label{class_kinect_v2_source}\index{Kinect\+V2\+Source@{Kinect\+V2\+Source}}
+}
+
+
+Class that extends the abstract class \hyperlink{class_depth_source}{Depth\+Source}. Links a Kinect2-\/interface to a private callback method. This method compresses the received frame with a specific \hyperlink{class_compression_strategy}{Compression\+Strategy} and sends it to the backend server using a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}.  
+
+
+
+
+{\ttfamily \#include $<$Kinect\+V2\+Source.\+h$>$}
+
+Inheritance diagram for Kinect\+V2\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kinect_v2_source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_kinect_v2_source_aa9c02adca487952da0e24e769e06ea87}{Kinect\+V2\+Source} (\hyperlink{_compression_strategy_8h_a56a83bf6847f4801f4205eb4be237ccf}{Compression} comp)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the I\+Kinect\+Sensor-\/interface. \end{DoxyCompactList}\item 
+\hypertarget{class_kinect_v2_source_a9859a72ce30b8b552e90f479bd5609cc}{\hyperlink{class_kinect_v2_source_a9859a72ce30b8b552e90f479bd5609cc}{$\sim$\+Kinect\+V2\+Source} ()}\label{class_kinect_v2_source_a9859a72ce30b8b552e90f479bd5609cc}
+
+\begin{DoxyCompactList}\small\item\em Destructor that releases all the interfaces safely. \end{DoxyCompactList}\item 
+\hypertarget{class_kinect_v2_source_aed2fd3bb2b33636b183ff217bf815f38}{void \hyperlink{class_kinect_v2_source_aed2fd3bb2b33636b183ff217bf815f38}{run\+Depth\+Source} ()}\label{class_kinect_v2_source_aed2fd3bb2b33636b183ff217bf815f38}
+
+\begin{DoxyCompactList}\small\item\em Public method which starts the Kinect\+V2-\/interface, which results in the camera filming frames. \end{DoxyCompactList}\item 
+\hypertarget{class_kinect_v2_source_a5f492aefe4035084fbb9ca92cc135e1b}{void \hyperlink{class_kinect_v2_source_a5f492aefe4035084fbb9ca92cc135e1b}{stop\+Depth\+Source} ()}\label{class_kinect_v2_source_a5f492aefe4035084fbb9ca92cc135e1b}
+
+\begin{DoxyCompactList}\small\item\em Public method which stops the Kinect\+V2-\/interface, making the camera stop filming. \end{DoxyCompactList}\item 
+void \hyperlink{class_kinect_v2_source_a3fa31b0766bb3e9037bb72ef7e4baea7}{save\+Frames\+To\+Directory} (const string \&directory\+\_\+, int N=M\+A\+X\+F\+I\+L\+E\+S)
+\begin{DoxyCompactList}\small\item\em Saves a specified number of frames as images in a directory. If the directory already contains frames with the same name they will be overwritten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that extends the abstract class \hyperlink{class_depth_source}{Depth\+Source}. Links a Kinect2-\/interface to a private callback method. This method compresses the received frame with a specific \hyperlink{class_compression_strategy}{Compression\+Strategy} and sends it to the backend server using a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_kinect_v2_source_aa9c02adca487952da0e24e769e06ea87}{\index{Kinect\+V2\+Source@{Kinect\+V2\+Source}!Kinect\+V2\+Source@{Kinect\+V2\+Source}}
+\index{Kinect\+V2\+Source@{Kinect\+V2\+Source}!Kinect\+V2\+Source@{Kinect\+V2\+Source}}
+\subsubsection[{Kinect\+V2\+Source}]{\setlength{\rightskip}{0pt plus 5cm}Kinect\+V2\+Source\+::\+Kinect\+V2\+Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Compression}}]{comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_kinect_v2_source_aa9c02adca487952da0e24e769e06ea87}
+
+
+Constructor that initializes the I\+Kinect\+Sensor-\/interface. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em comp} & The used \hyperlink{class_compression_strategy}{Compression\+Strategy} (enumerator) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_kinect_v2_source_a3fa31b0766bb3e9037bb72ef7e4baea7}{\index{Kinect\+V2\+Source@{Kinect\+V2\+Source}!save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}}
+\index{save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}!Kinect\+V2\+Source@{Kinect\+V2\+Source}}
+\subsubsection[{save\+Frames\+To\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}void Kinect\+V2\+Source\+::save\+Frames\+To\+Directory (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{directory\+\_\+, }
+\item[{int}]{N = {\ttfamily MAXFILES}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_kinect_v2_source_a3fa31b0766bb3e9037bb72ef7e4baea7}
+
+
+Saves a specified number of frames as images in a directory. If the directory already contains frames with the same name they will be overwritten. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em directory} & The directory where the frames will be saved \\
+\hline
+\mbox{\tt in}  & {\em N} & The number of frames that have to be saved \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_depth_source_a9e15edc06570770976693b32ef7c5226}{Depth\+Source}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Kinect\+V2\+Source.\+h\end{DoxyCompactItemize}

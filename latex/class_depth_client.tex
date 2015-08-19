@@ -1,0 +1,71 @@
+\hypertarget{class_depth_client}{\section{Depth\+Client Class Reference}
+\label{class_depth_client}\index{Depth\+Client@{Depth\+Client}}
+}
+
+
+Class which represents a client who connected to the Backend\+Server.  
+
+
+
+
+{\ttfamily \#include $<$Depth\+Client.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_depth_client_a0e4751e122fcddf72547252a58ce46ab}{Depth\+Client} (boost\+::asio\+::io\+\_\+service \&io\+\_\+service, const int \&id\+\_\+, bool visualize\+Clouds\+\_\+=true)
+\begin{DoxyCompactList}\small\item\em Public constructor which starts initializes the \hyperlink{class_depth_client}{Depth\+Client}. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_client_aa9682f7ce54fb6e87ae2fd6e1c668b7f}{tcp\+::socket \& \hyperlink{class_depth_client_aa9682f7ce54fb6e87ae2fd6e1c668b7f}{socket} ()}\label{class_depth_client_aa9682f7ce54fb6e87ae2fd6e1c668b7f}
+
+\begin{DoxyCompactList}\small\item\em Public getter which returns the socket linked to the \hyperlink{class_depth_client}{Depth\+Client}. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_client_a32cc929b9902a4f9f488b1c609048cb5}{void \hyperlink{class_depth_client_a32cc929b9902a4f9f488b1c609048cb5}{start} ()}\label{class_depth_client_a32cc929b9902a4f9f488b1c609048cb5}
+
+\begin{DoxyCompactList}\small\item\em Public method which starts the correspondance between the connected client and the server. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_client_ae13bf20205ccd9815a716ada83745794}{string {\bfseries get\+\_\+pointcloud\+\_\+path} (const int \&i)}\label{class_depth_client_ae13bf20205ccd9815a716ada83745794}
+
+\item 
+\hypertarget{class_depth_client_af6536183b766eded499d5fc2305838b6}{int {\bfseries get\+\_\+current\+\_\+frame} ()}\label{class_depth_client_af6536183b766eded499d5fc2305838b6}
+
+\item 
+\hypertarget{class_depth_client_a43c099aa7899efaf7f16ff0f1170b6c8}{bool {\bfseries is\+\_\+finished} ()}\label{class_depth_client_a43c099aa7899efaf7f16ff0f1170b6c8}
+
+\item 
+\hypertarget{class_depth_client_a7b7b8eff13e54fed9d40baccf4a2a506}{int {\bfseries get\+\_\+kinfu\+\_\+status} ()}\label{class_depth_client_a7b7b8eff13e54fed9d40baccf4a2a506}
+
+\item 
+\hypertarget{class_depth_client_a853118516fc4a72938448982f60e2613}{void {\bfseries set\+\_\+kinfu\+\_\+status} (int status)}\label{class_depth_client_a853118516fc4a72938448982f60e2613}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which represents a client who connected to the Backend\+Server. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_depth_client_a0e4751e122fcddf72547252a58ce46ab}{\index{Depth\+Client@{Depth\+Client}!Depth\+Client@{Depth\+Client}}
+\index{Depth\+Client@{Depth\+Client}!Depth\+Client@{Depth\+Client}}
+\subsubsection[{Depth\+Client}]{\setlength{\rightskip}{0pt plus 5cm}Depth\+Client\+::\+Depth\+Client (
+\begin{DoxyParamCaption}
+\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service, }
+\item[{const int \&}]{id\+\_\+, }
+\item[{bool}]{visualize\+Clouds\+\_\+ = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_depth_client_a0e4751e122fcddf72547252a58ce46ab}
+
+
+Public constructor which starts initializes the \hyperlink{class_depth_client}{Depth\+Client}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em io\+\_\+service} & The io\+\_\+service provided by boost\+::asio \\
+\hline
+\mbox{\tt in}  & {\em id\+\_\+} & The id of the \hyperlink{class_depth_client}{Depth\+Client} \\
+\hline
+\mbox{\tt in}  & {\em visualize\+Clouds} & Indicates if the received pointclouds should be visualized \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_depth_client_8h}{Depth\+Client.\+h}\end{DoxyCompactItemize}

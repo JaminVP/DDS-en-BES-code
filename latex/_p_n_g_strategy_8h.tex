@@ -1,0 +1,49 @@
+\hypertarget{_p_n_g_strategy_8h}{\section{P\+N\+G\+Strategy.\+h File Reference}
+\label{_p_n_g_strategy_8h}\index{P\+N\+G\+Strategy.\+h@{P\+N\+G\+Strategy.\+h}}
+}
+
+
+Class of Dimensional\+Data\+Source which handles 16-\/bit P\+N\+G-\/compression of single depthframe.  
+
+
+{\ttfamily \#include \char`\"{}Compression\+Strategy.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$png.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmem__encode}{mem\+\_\+encode}
+\item 
+class \hyperlink{class_p_n_g_strategy}{P\+N\+G\+Strategy}
+\begin{DoxyCompactList}\small\item\em Class that extends the abstract class \hyperlink{class_compression_strategy}{Compression\+Strategy}. Offers the functionality to compress a depth matrix to a 16-\/bit P\+N\+G-\/image. T\+O\+D\+O. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_n_g_strategy_8h_a477bc09dde00968e3e3e9e17bebba351}{\#define {\bfseries P\+N\+G\+S\+I\+G\+S\+I\+Z\+E}~8}\label{_p_n_g_strategy_8h_a477bc09dde00968e3e3e9e17bebba351}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_p_n_g_strategy_8h_a8aa9662dffd4c01b3853a94cffbd8b9e}{void {\bfseries my\+\_\+png\+\_\+write\+\_\+data} (png\+\_\+structp png\+\_\+ptr, png\+\_\+bytep data, png\+\_\+size\+\_\+t length)}\label{_p_n_g_strategy_8h_a8aa9662dffd4c01b3853a94cffbd8b9e}
+
+\item 
+\hypertarget{_p_n_g_strategy_8h_af4c8e47433eae8048d273dc2d89c48b7}{bool {\bfseries validate} (char $\ast$image, int n\+Bytes)}\label{_p_n_g_strategy_8h_af4c8e47433eae8048d273dc2d89c48b7}
+
+\item 
+\hypertarget{_p_n_g_strategy_8h_a24f77d6b66c9a20e72291b0fb53aec44}{void {\bfseries read\+Data\+From\+Image} (png\+\_\+structp png\+Ptr, png\+\_\+bytep data, png\+\_\+size\+\_\+t length)}\label{_p_n_g_strategy_8h_a24f77d6b66c9a20e72291b0fb53aec44}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class of Dimensional\+Data\+Source which handles 16-\/bit P\+N\+G-\/compression of single depthframe. 
+
+\begin{DoxyAuthor}{Author}
+Jamin Van Parys (\href{mailto:jaminvp@gmail.com}{\tt jaminvp@gmail.\+com})
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16/03/2015 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

@@ -1,0 +1,9 @@
+port=1112
+host=157.193.215.54
+compression=JPEG
+worldDirectory=C:/Users/CostelloUser/Documents/Visual Studio 2012/Projects/DimensionalDataSourceK2/x64/Release/worlds/
+workMode=streaming
+offlineDirectory=C:/Users/CostelloUser/Documents/Visual Studio 2012/Projects/DimensionalDataSourceK2/x64/Release/PNG1/
+framesToSave=800
+offlineResolutionX=512
+offlineResolutionY=424

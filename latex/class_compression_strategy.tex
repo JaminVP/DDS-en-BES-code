@@ -1,0 +1,69 @@
+\hypertarget{class_compression_strategy}{\section{Compression\+Strategy Class Reference}
+\label{class_compression_strategy}\index{Compression\+Strategy@{Compression\+Strategy}}
+}
+
+
+Abstract class which defines the used compression stategy and the implementation to convert a depth image to a compressed image.  
+
+
+
+
+{\ttfamily \#include $<$Compression\+Strategy.\+h$>$}
+
+Inheritance diagram for Compression\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_compression_strategy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_compression_strategy_a5124d2838fc7d8c769a34744f21602f4}{compress\+\_\+depth\+\_\+to\+\_\+image} (const int \&x\+Resolution, const int \&y\+Resolution, short $\ast$depth\+Data, unsigned char $\ast$\&out\+\_\+buffer\+\_\+, int \&n\+Bytes)=0
+\begin{DoxyCompactList}\small\item\em Public method that offers the functionality to compress a depth matrix to a compressed image. \end{DoxyCompactList}\item 
+\hypertarget{class_compression_strategy_af5a3cc25e0cad0b12544c6270f18dfb5}{virtual void {\bfseries decompress\+\_\+image\+\_\+to\+\_\+depth} (const int \&x\+Resolution, const int \&y\+Resolution, short $\ast$\&depth\+Data, unsigned char $\ast$image, int \&n\+Bytes)=0}\label{class_compression_strategy_af5a3cc25e0cad0b12544c6270f18dfb5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class which defines the used compression stategy and the implementation to convert a depth image to a compressed image. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_compression_strategy_a5124d2838fc7d8c769a34744f21602f4}{\index{Compression\+Strategy@{Compression\+Strategy}!compress\+\_\+depth\+\_\+to\+\_\+image@{compress\+\_\+depth\+\_\+to\+\_\+image}}
+\index{compress\+\_\+depth\+\_\+to\+\_\+image@{compress\+\_\+depth\+\_\+to\+\_\+image}!Compression\+Strategy@{Compression\+Strategy}}
+\subsubsection[{compress\+\_\+depth\+\_\+to\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Compression\+Strategy\+::compress\+\_\+depth\+\_\+to\+\_\+image (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x\+Resolution, }
+\item[{const int \&}]{y\+Resolution, }
+\item[{short $\ast$}]{depth\+Data, }
+\item[{unsigned char $\ast$\&}]{out\+\_\+buffer\+\_\+, }
+\item[{int \&}]{n\+Bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_compression_strategy_a5124d2838fc7d8c769a34744f21602f4}
+
+
+Public method that offers the functionality to compress a depth matrix to a compressed image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x\+Resolution} & The horizontal resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em y\+Resolution} & The vertical resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em depth\+Data} & A pointer to a depthmatrix containing the depth data \\
+\hline
+\mbox{\tt out}  & {\em out\+\_\+buffer} & A pointer to a databuffer containing the compressed image \\
+\hline
+\mbox{\tt out}  & {\em n\+Bytes} & The size of the out\+\_\+buffer in bytes \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_p_n_g_strategy_aaa542a51c70ede4b82facb66d9ff9ec2}{P\+N\+G\+Strategy}, and \hyperlink{class_j_p_e_g_strategy_a3e27b992e48e592c4b127bbeeabc87ce}{J\+P\+E\+G\+Strategy}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_compression_strategy_8h}{Compression\+Strategy.\+h}\end{DoxyCompactItemize}

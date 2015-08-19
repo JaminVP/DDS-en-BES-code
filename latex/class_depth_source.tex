@@ -1,0 +1,99 @@
+\hypertarget{class_depth_source}{\section{Depth\+Source Class Reference}
+\label{class_depth_source}\index{Depth\+Source@{Depth\+Source}}
+}
+
+
+Abstract class that serves as a source of depth data. The depth data is to be compressed by a specified \hyperlink{class_compression_strategy}{Compression\+Strategy} and then sent to the backend server using a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}.  
+
+
+
+
+{\ttfamily \#include $<$Depth\+Source.\+h$>$}
+
+Inheritance diagram for Depth\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_depth_source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_depth_source_a391f09ef6480e4243001381ab36c5d6b}{\hyperlink{class_depth_source_a391f09ef6480e4243001381ab36c5d6b}{Depth\+Source} (\hyperlink{_compression_strategy_8h_a56a83bf6847f4801f4205eb4be237ccf}{Compression} comp=J\+P\+E\+G)}\label{class_depth_source_a391f09ef6480e4243001381ab36c5d6b}
+
+\begin{DoxyCompactList}\small\item\em Public constructor which initializes the correct \hyperlink{class_compression_strategy}{Compression\+Strategy}. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_source_a5d30215425a5816c488121bd9d770909}{virtual void \hyperlink{class_depth_source_a5d30215425a5816c488121bd9d770909}{run\+Depth\+Source} ()=0}\label{class_depth_source_a5d30215425a5816c488121bd9d770909}
+
+\begin{DoxyCompactList}\small\item\em Public virtual method which starts the Grabber-\/interface. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_source_a524c199a0eabfec128d55dc676015f8d}{virtual void \hyperlink{class_depth_source_a524c199a0eabfec128d55dc676015f8d}{stop\+Depth\+Source} ()=0}\label{class_depth_source_a524c199a0eabfec128d55dc676015f8d}
+
+\begin{DoxyCompactList}\small\item\em Public virtual method which stops the Grabber-\/interface. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_depth_source_a9e15edc06570770976693b32ef7c5226}{save\+Frames\+To\+Directory} (const string \&directory\+\_\+, int N=M\+A\+X\+F\+I\+L\+E\+S)=0
+\begin{DoxyCompactList}\small\item\em Virtual method.\+Saves a specified number of frames as to be determined images in a directory. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_source_ada5c09eba4cf325eea481e5acaefef76}{void {\bfseries set\+Server\+Settings} (const string \&address, const string \&port)}\label{class_depth_source_ada5c09eba4cf325eea481e5acaefef76}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_depth_source_aeda564a4cee4f9741fe44edb29982883}{\hyperlink{class_compression_strategy}{Compression\+Strategy} $\ast$ {\bfseries compression}}\label{class_depth_source_aeda564a4cee4f9741fe44edb29982883}
+
+\item 
+\hypertarget{class_depth_source_a24ca992b257e38717e9099f773eefd67}{\hyperlink{class_d_d_s_client}{D\+D\+S\+Client} $\ast$ {\bfseries client}}\label{class_depth_source_a24ca992b257e38717e9099f773eefd67}
+
+\item 
+\hypertarget{class_depth_source_a1ec315333dc0357859db36f281dcb568}{int {\bfseries frame}}\label{class_depth_source_a1ec315333dc0357859db36f281dcb568}
+
+\item 
+\hypertarget{class_depth_source_a7a1eb8572f2aa03d455f85a1b1709488}{int {\bfseries file\+Count}}\label{class_depth_source_a7a1eb8572f2aa03d455f85a1b1709488}
+
+\item 
+\hypertarget{class_depth_source_ac724a2f7d453e0ddad2e99bf3381f41f}{string {\bfseries D\+I\+R\+E\+C\+T\+O\+R\+Y}}\label{class_depth_source_ac724a2f7d453e0ddad2e99bf3381f41f}
+
+\item 
+\hypertarget{class_depth_source_a8682eac3aae4f214f9a33ff3ade2b1c7}{int {\bfseries x\+Resolution\+\_\+}}\label{class_depth_source_a8682eac3aae4f214f9a33ff3ade2b1c7}
+
+\item 
+\hypertarget{class_depth_source_a81392a74d51eb00a9b4abfa4a10938db}{int {\bfseries y\+Resolution\+\_\+}}\label{class_depth_source_a81392a74d51eb00a9b4abfa4a10938db}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_depth_source_a7da4336930cd7e2f5997bbb1b8bed5c7}{static const int {\bfseries M\+A\+X\+F\+I\+L\+E\+S} =5000}\label{class_depth_source_a7da4336930cd7e2f5997bbb1b8bed5c7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class that serves as a source of depth data. The depth data is to be compressed by a specified \hyperlink{class_compression_strategy}{Compression\+Strategy} and then sent to the backend server using a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_depth_source_a9e15edc06570770976693b32ef7c5226}{\index{Depth\+Source@{Depth\+Source}!save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}}
+\index{save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}!Depth\+Source@{Depth\+Source}}
+\subsubsection[{save\+Frames\+To\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Depth\+Source\+::save\+Frames\+To\+Directory (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{directory\+\_\+, }
+\item[{int}]{N = {\ttfamily MAXFILES}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_depth_source_a9e15edc06570770976693b32ef7c5226}
+
+
+Virtual method.\+Saves a specified number of frames as to be determined images in a directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em directory} & The directory where the frames will be saved \\
+\hline
+\mbox{\tt in}  & {\em N} & The number of frames that have to be saved \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_kinect_v2_source_a3fa31b0766bb3e9037bb72ef7e4baea7}{Kinect\+V2\+Source}, \hyperlink{class_dummy_source_af49cb371ea7e0eca894d1cdc26749f3f}{Dummy\+Source}, and \hyperlink{class_open_n_i_source_a2d6f642492a63ebb1cef48e927d52a06}{Open\+N\+I\+Source}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_depth_source_8h}{Depth\+Source.\+h}\end{DoxyCompactItemize}

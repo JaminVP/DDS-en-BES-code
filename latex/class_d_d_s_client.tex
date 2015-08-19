@@ -1,0 +1,95 @@
+\hypertarget{class_d_d_s_client}{\section{D\+D\+S\+Client Class Reference}
+\label{class_d_d_s_client}\index{D\+D\+S\+Client@{D\+D\+S\+Client}}
+}
+
+
+Class that handles the sending of compressed images to a backend server.  
+
+
+
+
+{\ttfamily \#include $<$D\+D\+S\+Client.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_d_s_client_a4d17bf120f9f3b3ec9e58010977f8de5}{D\+D\+S\+Client} (const int \&width\+\_\+, const int \&height\+\_\+, const \hyperlink{_compression_strategy_8h_a56a83bf6847f4801f4205eb4be237ccf}{Compression} \&comp\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor that establishes a connection with the backend server. \end{DoxyCompactList}\item 
+\hypertarget{class_d_d_s_client_a3e3b8caddd8aa825f6895857591a4040}{\hyperlink{class_d_d_s_client_a3e3b8caddd8aa825f6895857591a4040}{$\sim$\+D\+D\+S\+Client} ()}\label{class_d_d_s_client_a3e3b8caddd8aa825f6895857591a4040}
+
+\begin{DoxyCompactList}\small\item\em Destructor that closes the connection with the backend server if there's still a connection. \end{DoxyCompactList}\item 
+\hypertarget{class_d_d_s_client_ab46ef5c251ae4896044436ed0443c17d}{void \hyperlink{class_d_d_s_client_ab46ef5c251ae4896044436ed0443c17d}{close\+Connection} ()}\label{class_d_d_s_client_ab46ef5c251ae4896044436ed0443c17d}
+
+\begin{DoxyCompactList}\small\item\em Closes the connection with the backend server. \end{DoxyCompactList}\item 
+bool \hyperlink{class_d_d_s_client_a93c7cf22bb7bd1fb663dd44406febecb}{send\+Frame\+To\+Server} (unsigned char $\ast$buf, const int \&size\+\_\+)
+\begin{DoxyCompactList}\small\item\em Public method. Puts a single frame on the queue of frames remaining to send. \end{DoxyCompactList}\item 
+\hypertarget{class_d_d_s_client_aaa2d92dfb333a3a2d3e2acb65c338e26}{void \hyperlink{class_d_d_s_client_aaa2d92dfb333a3a2d3e2acb65c338e26}{receive\+World\+From\+Server} ()}\label{class_d_d_s_client_aaa2d92dfb333a3a2d3e2acb65c338e26}
+
+\begin{DoxyCompactList}\small\item\em Public method. Receives the size of the finished Kinfu\+World from the Backend Server, asynchronous. \end{DoxyCompactList}\item 
+\hypertarget{class_d_d_s_client_a8c0e733323837567d33b0dbdc4472074}{string \hyperlink{class_d_d_s_client_a8c0e733323837567d33b0dbdc4472074}{get\+Host} ()}\label{class_d_d_s_client_a8c0e733323837567d33b0dbdc4472074}
+
+\begin{DoxyCompactList}\small\item\em Public method. Gives a string which represents the I\+Pv4-\/address of the backendserver. \end{DoxyCompactList}\item 
+\hypertarget{class_d_d_s_client_a21ad759ad351f9e77b22cec2c7353f57}{string \hyperlink{class_d_d_s_client_a21ad759ad351f9e77b22cec2c7353f57}{get\+Port} ()}\label{class_d_d_s_client_a21ad759ad351f9e77b22cec2c7353f57}
+
+\begin{DoxyCompactList}\small\item\em Public method. Returns a string which represents the used port of the backendserver. \end{DoxyCompactList}\item 
+\hypertarget{class_d_d_s_client_aeba51463ac23edc06f7384957d28f2f0}{void \hyperlink{class_d_d_s_client_aeba51463ac23edc06f7384957d28f2f0}{set\+Host} (const string \&host\+\_\+)}\label{class_d_d_s_client_aeba51463ac23edc06f7384957d28f2f0}
+
+\begin{DoxyCompactList}\small\item\em Public method. Sets the I\+Pv4-\/address of the backend server. \end{DoxyCompactList}\item 
+\hypertarget{class_d_d_s_client_a86b8c929d70c03ef84f84a32ae2e778e}{void \hyperlink{class_d_d_s_client_a86b8c929d70c03ef84f84a32ae2e778e}{set\+Port} (const string \&port\+\_\+)}\label{class_d_d_s_client_a86b8c929d70c03ef84f84a32ae2e778e}
+
+\begin{DoxyCompactList}\small\item\em Public method. Sets the I\+Pv4-\/address of the backend server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles the sending of compressed images to a backend server. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_d_s_client_a4d17bf120f9f3b3ec9e58010977f8de5}{\index{D\+D\+S\+Client@{D\+D\+S\+Client}!D\+D\+S\+Client@{D\+D\+S\+Client}}
+\index{D\+D\+S\+Client@{D\+D\+S\+Client}!D\+D\+S\+Client@{D\+D\+S\+Client}}
+\subsubsection[{D\+D\+S\+Client}]{\setlength{\rightskip}{0pt plus 5cm}D\+D\+S\+Client\+::\+D\+D\+S\+Client (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{width\+\_\+, }
+\item[{const int \&}]{height\+\_\+, }
+\item[{const {\bf Compression} \&}]{comp\+\_\+}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_d_s_client_a4d17bf120f9f3b3ec9e58010977f8de5}
+
+
+Constructor that establishes a connection with the backend server. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em width\+\_\+} & The width of a single frame \\
+\hline
+\mbox{\tt in}  & {\em height\+\_\+} & The height of a single frame \\
+\hline
+\mbox{\tt in}  & {\em comp\+\_\+} & The used compression strategy \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_d_s_client_a93c7cf22bb7bd1fb663dd44406febecb}{\index{D\+D\+S\+Client@{D\+D\+S\+Client}!send\+Frame\+To\+Server@{send\+Frame\+To\+Server}}
+\index{send\+Frame\+To\+Server@{send\+Frame\+To\+Server}!D\+D\+S\+Client@{D\+D\+S\+Client}}
+\subsubsection[{send\+Frame\+To\+Server}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+D\+S\+Client\+::send\+Frame\+To\+Server (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{buf, }
+\item[{const int \&}]{size\+\_\+}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_d_s_client_a93c7cf22bb7bd1fb663dd44406febecb}
+
+
+Public method. Puts a single frame on the queue of frames remaining to send. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buf} & The buffer containing the compressed image \\
+\hline
+\mbox{\tt in}  & {\em size\+\_\+} & The size of the buffer (in bytes) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_d_d_s_client_8h}{D\+D\+S\+Client.\+h}\end{DoxyCompactItemize}

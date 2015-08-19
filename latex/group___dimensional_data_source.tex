@@ -1,0 +1,37 @@
+\hypertarget{group___dimensional_data_source}{\section{Dimensional\+Data\+Source}
+\label{group___dimensional_data_source}\index{Dimensional\+Data\+Source@{Dimensional\+Data\+Source}}
+}
+
+
+Dimensional Data Source provides a consistent stream of compressed mages and sends them to a backend server through a single T\+C\+P-\/connection using the Boost-\/libraries.  
+
+
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{_compression_strategy_8h}{Compression\+Strategy.\+h}
+\begin{DoxyCompactList}\small\item\em Abstract Class which defines the compression strategy for the received frames. \end{DoxyCompactList}\item 
+file \hyperlink{_config_reader_8h}{Config\+Reader.\+h}
+\begin{DoxyCompactList}\small\item\em Utility Class which gives access to certain configuration constants. \end{DoxyCompactList}\item 
+file \hyperlink{_d_d_s_client_8h}{D\+D\+S\+Client.\+h}
+\begin{DoxyCompactList}\small\item\em Handles the sending of compressed images to a backend server. \end{DoxyCompactList}\item 
+file \hyperlink{_depth_source_8h}{Depth\+Source.\+h}
+\begin{DoxyCompactList}\small\item\em Abstract class which provides a stream of compressed depthimages. \end{DoxyCompactList}\item 
+file \hyperlink{_dummy_source_8h}{Dummy\+Source.\+h}
+\begin{DoxyCompactList}\small\item\em Class which implements the \hyperlink{class_depth_source}{Depth\+Source} abstract class. Acts as a dummy source as it sends the frames located in a directory to the backendserver through a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}. \end{DoxyCompactList}\item 
+file \hyperlink{_j_p_e_g_decompression_8h}{J\+P\+E\+G\+Decompression.\+h}
+\begin{DoxyCompactList}\small\item\em Class which expands Decompression\+Strategy by defining the J\+P\+E\+G-\/decompression for the received images. \end{DoxyCompactList}\item 
+file \hyperlink{_j_p_e_g_strategy_8h}{J\+P\+E\+G\+Strategy.\+h}
+\begin{DoxyCompactList}\small\item\em Class which expands \hyperlink{class_compression_strategy}{Compression\+Strategy} by defining the J\+P\+E\+G-\/compression for the received frames. \end{DoxyCompactList}\item 
+file \hyperlink{_open_n_i_source_8h}{Open\+N\+I\+Source.\+h}
+\begin{DoxyCompactList}\small\item\em Class of Dimensional\+Data\+Source which uses an Open\+N\+I-\/camera to receive frames and uses a \hyperlink{class_compression_strategy}{Compression\+Strategy} to compress them. \end{DoxyCompactList}\item 
+file \hyperlink{_p_n_g_strategy_8h}{P\+N\+G\+Strategy.\+h}
+\begin{DoxyCompactList}\small\item\em Class of Dimensional\+Data\+Source which handles 16-\/bit P\+N\+G-\/compression of single depthframe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dimensional Data Source provides a consistent stream of compressed mages and sends them to a backend server through a single T\+C\+P-\/connection using the Boost-\/libraries. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

@@ -1,0 +1,97 @@
+\hypertarget{class_dummy_source}{\section{Dummy\+Source Class Reference}
+\label{class_dummy_source}\index{Dummy\+Source@{Dummy\+Source}}
+}
+
+
+Class that extends the abstract class \hyperlink{class_depth_source}{Depth\+Source}. Acts as a dummysource of depthimages by sending compressed images that have previously been recorded by another depthsource and have been saved locally in a directory.  
+
+
+
+
+{\ttfamily \#include $<$Dummy\+Source.\+h$>$}
+
+Inheritance diagram for Dummy\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dummy_source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dummy_source_a0909293c8d1f641619b0041e84adc06b}{Dummy\+Source} (const string \&directory, int x\+Resolution, int y\+Resolution, \hyperlink{_compression_strategy_8h_a56a83bf6847f4801f4205eb4be237ccf}{Compression} comp)
+\begin{DoxyCompactList}\small\item\em Public constructor which initializes a connection with the \hyperlink{class_d_d_s_client}{D\+D\+S\+Client} and locates the directory needed. \end{DoxyCompactList}\item 
+\hypertarget{class_dummy_source_a028993d5099e07fd5bde0b80dfd593bc}{\hyperlink{class_dummy_source_a028993d5099e07fd5bde0b80dfd593bc}{$\sim$\+Dummy\+Source} ()}\label{class_dummy_source_a028993d5099e07fd5bde0b80dfd593bc}
+
+\begin{DoxyCompactList}\small\item\em Public destructor which terminates the connection with the backend server. \end{DoxyCompactList}\item 
+\hypertarget{class_dummy_source_a93b6a46c6fc3b71488578b0bf1665bb6}{void \hyperlink{class_dummy_source_a93b6a46c6fc3b71488578b0bf1665bb6}{run\+Depth\+Source} ()}\label{class_dummy_source_a93b6a46c6fc3b71488578b0bf1665bb6}
+
+\begin{DoxyCompactList}\small\item\em Public method which starts the dummysource and sends the frames located in the directory to the server. \end{DoxyCompactList}\item 
+\hypertarget{class_dummy_source_a68186d8b68fac14eaaf764a50addbf14}{virtual void \hyperlink{class_dummy_source_a68186d8b68fac14eaaf764a50addbf14}{stop\+Depth\+Source} ()}\label{class_dummy_source_a68186d8b68fac14eaaf764a50addbf14}
+
+\begin{DoxyCompactList}\small\item\em Public virtual method which stops the Grabber-\/interface. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_dummy_source_af49cb371ea7e0eca894d1cdc26749f3f}{save\+Frames\+To\+Directory} (const string \&directory\+\_\+, int N=M\+A\+X\+F\+I\+L\+E\+S)
+\begin{DoxyCompactList}\small\item\em Virtual method.\+Saves a specified number of frames as to be determined images in a directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that extends the abstract class \hyperlink{class_depth_source}{Depth\+Source}. Acts as a dummysource of depthimages by sending compressed images that have previously been recorded by another depthsource and have been saved locally in a directory. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dummy_source_a0909293c8d1f641619b0041e84adc06b}{\index{Dummy\+Source@{Dummy\+Source}!Dummy\+Source@{Dummy\+Source}}
+\index{Dummy\+Source@{Dummy\+Source}!Dummy\+Source@{Dummy\+Source}}
+\subsubsection[{Dummy\+Source}]{\setlength{\rightskip}{0pt plus 5cm}Dummy\+Source\+::\+Dummy\+Source (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{directory, }
+\item[{int}]{x\+Resolution, }
+\item[{int}]{y\+Resolution, }
+\item[{{\bf Compression}}]{comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_dummy_source_a0909293c8d1f641619b0041e84adc06b}
+
+
+Public constructor which initializes a connection with the \hyperlink{class_d_d_s_client}{D\+D\+S\+Client} and locates the directory needed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em directory} & The directory where the frames are located \\
+\hline
+\mbox{\tt in}  & {\em x\+Resolution} & The horizontal resolution of the frames \\
+\hline
+\mbox{\tt in}  & {\em y\+Resolution} & The vertical resolution of the frames \\
+\hline
+\mbox{\tt in}  & {\em comp} & The used \hyperlink{class_compression_strategy}{Compression\+Strategy} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dummy_source_af49cb371ea7e0eca894d1cdc26749f3f}{\index{Dummy\+Source@{Dummy\+Source}!save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}}
+\index{save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}!Dummy\+Source@{Dummy\+Source}}
+\subsubsection[{save\+Frames\+To\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Dummy\+Source\+::save\+Frames\+To\+Directory (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{directory\+\_\+, }
+\item[{int}]{N = {\ttfamily MAXFILES}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_dummy_source_af49cb371ea7e0eca894d1cdc26749f3f}
+
+
+Virtual method.\+Saves a specified number of frames as to be determined images in a directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em directory} & The directory where the frames will be saved \\
+\hline
+\mbox{\tt in}  & {\em N} & The number of frames that have to be saved \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_depth_source_a9e15edc06570770976693b32ef7c5226}{Depth\+Source}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_dummy_source_8h}{Dummy\+Source.\+h}\end{DoxyCompactItemize}

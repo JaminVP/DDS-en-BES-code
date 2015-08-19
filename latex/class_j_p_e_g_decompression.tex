@@ -1,0 +1,61 @@
+\hypertarget{class_j_p_e_g_decompression}{\section{J\+P\+E\+G\+Decompression Class Reference}
+\label{class_j_p_e_g_decompression}\index{J\+P\+E\+G\+Decompression@{J\+P\+E\+G\+Decompression}}
+}
+
+
+Class that extends the abstract class Decompression\+Strategy. Offers the functionality to decompress a 12-\/bit J\+P\+E\+G-\/image to a depth matrix.  
+
+
+
+
+{\ttfamily \#include $<$J\+P\+E\+G\+Decompression.\+h$>$}
+
+Inheritance diagram for J\+P\+E\+G\+Decompression\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_j_p_e_g_decompression}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_j_p_e_g_decompression_ad9f3e806d9e86a5333f37929c385496c}{decompress\+\_\+image\+\_\+to\+\_\+depth} (const int \&x\+Resolution, const int \&y\+Resolution, short $\ast$\&data, unsigned char $\ast$image)
+\begin{DoxyCompactList}\small\item\em Public method that offers the functionality to compress a depth matrix to a 12-\/bit J\+P\+E\+G-\/image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that extends the abstract class Decompression\+Strategy. Offers the functionality to decompress a 12-\/bit J\+P\+E\+G-\/image to a depth matrix. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_j_p_e_g_decompression_ad9f3e806d9e86a5333f37929c385496c}{\index{J\+P\+E\+G\+Decompression@{J\+P\+E\+G\+Decompression}!decompress\+\_\+image\+\_\+to\+\_\+depth@{decompress\+\_\+image\+\_\+to\+\_\+depth}}
+\index{decompress\+\_\+image\+\_\+to\+\_\+depth@{decompress\+\_\+image\+\_\+to\+\_\+depth}!J\+P\+E\+G\+Decompression@{J\+P\+E\+G\+Decompression}}
+\subsubsection[{decompress\+\_\+image\+\_\+to\+\_\+depth}]{\setlength{\rightskip}{0pt plus 5cm}void J\+P\+E\+G\+Decompression\+::decompress\+\_\+image\+\_\+to\+\_\+depth (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x\+Resolution, }
+\item[{const int \&}]{y\+Resolution, }
+\item[{short $\ast$\&}]{data, }
+\item[{unsigned char $\ast$}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_j_p_e_g_decompression_ad9f3e806d9e86a5333f37929c385496c}
+
+
+Public method that offers the functionality to compress a depth matrix to a 12-\/bit J\+P\+E\+G-\/image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x\+Resolution} & The horizontal resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em y\+Resolution} & The vertical resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em depth\+Data} & A pointer to a depthmatrix containing the depth data \\
+\hline
+\mbox{\tt out}  & {\em out\+\_\+buffer} & A pointer to a databuffer containing the compressed image \\
+\hline
+\mbox{\tt out}  & {\em n\+Bytes} & The size of the out\+\_\+buffer in bytes \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_j_p_e_g_decompression_8h}{J\+P\+E\+G\+Decompression.\+h}\end{DoxyCompactItemize}

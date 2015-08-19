@@ -1,0 +1,100 @@
+\hypertarget{class_p_n_g_strategy}{\section{P\+N\+G\+Strategy Class Reference}
+\label{class_p_n_g_strategy}\index{P\+N\+G\+Strategy@{P\+N\+G\+Strategy}}
+}
+
+
+Class that extends the abstract class \hyperlink{class_compression_strategy}{Compression\+Strategy}. Offers the functionality to compress a depth matrix to a 16-\/bit P\+N\+G-\/image. T\+O\+D\+O.  
+
+
+
+
+{\ttfamily \#include $<$P\+N\+G\+Strategy.\+h$>$}
+
+Inheritance diagram for P\+N\+G\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_n_g_strategy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_p_n_g_strategy_aaa542a51c70ede4b82facb66d9ff9ec2}{compress\+\_\+depth\+\_\+to\+\_\+image} (const int \&x\+Resolution, const int \&y\+Resolution, short $\ast$depth\+Data, unsigned char $\ast$\&out\+\_\+buffer\+\_\+, int \&n\+Bytes)
+\begin{DoxyCompactList}\small\item\em Public method that offers the functionality to compress a depth matrix to a 16-\/bit P\+N\+G-\/image. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_n_g_strategy_a170b89ef5e216f9166d80916d3efe1b0}{decompress\+\_\+image\+\_\+to\+\_\+depth} (const int \&x\+Resolution, const int \&y\+Resolution, short $\ast$\&depth\+Data, unsigned char $\ast$image, int \&n\+Bytes)
+\begin{DoxyCompactList}\small\item\em Public method that offers the functionality to decompress a 12-\/bit J\+P\+E\+G-\/image to a depth matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that extends the abstract class \hyperlink{class_compression_strategy}{Compression\+Strategy}. Offers the functionality to compress a depth matrix to a 16-\/bit P\+N\+G-\/image. T\+O\+D\+O. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_n_g_strategy_aaa542a51c70ede4b82facb66d9ff9ec2}{\index{P\+N\+G\+Strategy@{P\+N\+G\+Strategy}!compress\+\_\+depth\+\_\+to\+\_\+image@{compress\+\_\+depth\+\_\+to\+\_\+image}}
+\index{compress\+\_\+depth\+\_\+to\+\_\+image@{compress\+\_\+depth\+\_\+to\+\_\+image}!P\+N\+G\+Strategy@{P\+N\+G\+Strategy}}
+\subsubsection[{compress\+\_\+depth\+\_\+to\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}void P\+N\+G\+Strategy\+::compress\+\_\+depth\+\_\+to\+\_\+image (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x\+Resolution, }
+\item[{const int \&}]{y\+Resolution, }
+\item[{short $\ast$}]{depth\+Data, }
+\item[{unsigned char $\ast$\&}]{out\+\_\+buffer\+\_\+, }
+\item[{int \&}]{n\+Bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_p_n_g_strategy_aaa542a51c70ede4b82facb66d9ff9ec2}
+
+
+Public method that offers the functionality to compress a depth matrix to a 16-\/bit P\+N\+G-\/image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x\+Resolution} & The horizontal resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em y\+Resolution} & The vertical resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em depth\+Data} & A pointer to a depthmatrix containing the depth data \\
+\hline
+\mbox{\tt out}  & {\em out\+\_\+buffer} & A pointer to a databuffer containing the compressed image \\
+\hline
+\mbox{\tt out}  & {\em n\+Bytes} & The size of the out\+\_\+buffer in bytes \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_compression_strategy_a5124d2838fc7d8c769a34744f21602f4}{Compression\+Strategy}.
+
+\hypertarget{class_p_n_g_strategy_a170b89ef5e216f9166d80916d3efe1b0}{\index{P\+N\+G\+Strategy@{P\+N\+G\+Strategy}!decompress\+\_\+image\+\_\+to\+\_\+depth@{decompress\+\_\+image\+\_\+to\+\_\+depth}}
+\index{decompress\+\_\+image\+\_\+to\+\_\+depth@{decompress\+\_\+image\+\_\+to\+\_\+depth}!P\+N\+G\+Strategy@{P\+N\+G\+Strategy}}
+\subsubsection[{decompress\+\_\+image\+\_\+to\+\_\+depth}]{\setlength{\rightskip}{0pt plus 5cm}void P\+N\+G\+Strategy\+::decompress\+\_\+image\+\_\+to\+\_\+depth (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{x\+Resolution, }
+\item[{const int \&}]{y\+Resolution, }
+\item[{short $\ast$\&}]{depth\+Data, }
+\item[{unsigned char $\ast$}]{image, }
+\item[{int \&}]{n\+Bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_p_n_g_strategy_a170b89ef5e216f9166d80916d3efe1b0}
+
+
+Public method that offers the functionality to decompress a 12-\/bit J\+P\+E\+G-\/image to a depth matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x\+Resolution} & The horizontal resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em y\+Resolution} & The vertical resolution of the used camera \\
+\hline
+\mbox{\tt in}  & {\em depth\+Data} & A pointer to a depthmatrix containing the depth data \\
+\hline
+\mbox{\tt out}  & {\em image} & A pointer to a databuffer containing the compressed image \\
+\hline
+\mbox{\tt out}  & {\em n\+Bytes} & The size of the image in bytes \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_compression_strategy}{Compression\+Strategy}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_n_g_strategy_8h}{P\+N\+G\+Strategy.\+h}\end{DoxyCompactItemize}

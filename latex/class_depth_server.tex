@@ -1,0 +1,98 @@
+\hypertarget{class_depth_server}{\section{Depth\+Server Class Reference}
+\label{class_depth_server}\index{Depth\+Server@{Depth\+Server}}
+}
+
+
+Class that serves as a receiver of depth data. The depth data is to be decompressed by a specified Decompression\+Strategy, converted to a Pointcloud and then saved to disk to be processed later.  
+
+
+
+
+{\ttfamily \#include $<$Depth\+Server.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_depth_server_a9ab59bd48e1280ee2dda1bdad4e6f8ff}{Depth\+Server} (boost\+::asio\+::io\+\_\+service \&io\+\_\+service, short port, bool visualize\+Clouds\+\_\+=false)
+\begin{DoxyCompactList}\small\item\em Public constructor which starts the server on a given port and allows clients to connect. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_server_acf8fb886da8f5c4bd5b1c19e4267042a}{\hyperlink{class_depth_server_acf8fb886da8f5c4bd5b1c19e4267042a}{$\sim$\+Depth\+Server} ()}\label{class_depth_server_acf8fb886da8f5c4bd5b1c19e4267042a}
+
+\begin{DoxyCompactList}\small\item\em Public destructor which starts the server on a given port and allows clients to connect. \end{DoxyCompactList}\item 
+\hyperlink{class_depth_client}{Depth\+Client} $\ast$ \hyperlink{class_depth_server_a391a316cb888cee46324a137907c73f7}{get\+\_\+client} (const int \&i)
+\begin{DoxyCompactList}\small\item\em Public getter which returns a pointer to a certain \hyperlink{class_depth_client}{Depth\+Client}. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_server_ad28c056c7576e2ff855e0d782d18b7e1}{int \hyperlink{class_depth_server_ad28c056c7576e2ff855e0d782d18b7e1}{get\+\_\+total\+\_\+clients} ()}\label{class_depth_server_ad28c056c7576e2ff855e0d782d18b7e1}
+
+\begin{DoxyCompactList}\small\item\em Public getter which returns the total number of clients who have connected to the server. \end{DoxyCompactList}\item 
+\hypertarget{class_depth_server_ae57fc68efb89381851e141be1dbe8ff2}{void \hyperlink{class_depth_server_ae57fc68efb89381851e141be1dbe8ff2}{handle\+\_\+accept} (\hyperlink{class_depth_client}{Depth\+Client} $\ast$new\+\_\+session, const boost\+::system\+::error\+\_\+code \&error)}\label{class_depth_server_ae57fc68efb89381851e141be1dbe8ff2}
+
+\begin{DoxyCompactList}\small\item\em Public callbackmethod which handles a new \hyperlink{class_d_d_s_client}{D\+D\+S\+Client} connecting to the Backend\+Server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_depth_server_a8f00b5c9c633649786f2fc2929856b63}{boost\+::asio\+::io\+\_\+service \& {\bfseries io\+\_\+service\+\_\+}}\label{class_depth_server_a8f00b5c9c633649786f2fc2929856b63}
+
+\item 
+\hypertarget{class_depth_server_a80279520e474ba5bb2d9db12527bcc75}{tcp\+::acceptor {\bfseries acceptor\+\_\+}}\label{class_depth_server_a80279520e474ba5bb2d9db12527bcc75}
+
+\item 
+\hypertarget{class_depth_server_a2d934c3c2eaa2f9a4b55e2c659e42375}{vector$<$ \hyperlink{class_depth_client}{Depth\+Client} $\ast$ $>$ {\bfseries clients}}\label{class_depth_server_a2d934c3c2eaa2f9a4b55e2c659e42375}
+
+\item 
+\hypertarget{class_depth_server_adf38e34741b8085f85116cc806952c63}{int {\bfseries total\+\_\+clients}}\label{class_depth_server_adf38e34741b8085f85116cc806952c63}
+
+\item 
+\hypertarget{class_depth_server_a89a9934a17453d765d8872477afa70c0}{bool {\bfseries visualize\+Clouds}}\label{class_depth_server_a89a9934a17453d765d8872477afa70c0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that serves as a receiver of depth data. The depth data is to be decompressed by a specified Decompression\+Strategy, converted to a Pointcloud and then saved to disk to be processed later. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_depth_server_a9ab59bd48e1280ee2dda1bdad4e6f8ff}{\index{Depth\+Server@{Depth\+Server}!Depth\+Server@{Depth\+Server}}
+\index{Depth\+Server@{Depth\+Server}!Depth\+Server@{Depth\+Server}}
+\subsubsection[{Depth\+Server}]{\setlength{\rightskip}{0pt plus 5cm}Depth\+Server\+::\+Depth\+Server (
+\begin{DoxyParamCaption}
+\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service, }
+\item[{short}]{port, }
+\item[{bool}]{visualize\+Clouds\+\_\+ = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_depth_server_a9ab59bd48e1280ee2dda1bdad4e6f8ff}
+
+
+Public constructor which starts the server on a given port and allows clients to connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em io\+\_\+service} & The io\+\_\+service provided by boost \\
+\hline
+\mbox{\tt in}  & {\em port} & The port the server has to run on \\
+\hline
+\mbox{\tt in}  & {\em visualize\+Clouds\+\_\+} & Indicated if the received pointclouds should be visualized \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_depth_server_a391a316cb888cee46324a137907c73f7}{\index{Depth\+Server@{Depth\+Server}!get\+\_\+client@{get\+\_\+client}}
+\index{get\+\_\+client@{get\+\_\+client}!Depth\+Server@{Depth\+Server}}
+\subsubsection[{get\+\_\+client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Depth\+Client}$\ast$ Depth\+Server\+::get\+\_\+client (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_depth_server_a391a316cb888cee46324a137907c73f7}
+
+
+Public getter which returns a pointer to a certain \hyperlink{class_depth_client}{Depth\+Client}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & The index of the \hyperlink{class_depth_client}{Depth\+Client} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_depth_server_8h}{Depth\+Server.\+h}\end{DoxyCompactItemize}

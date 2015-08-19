@@ -1,29 +1,0 @@
-TALL_BUILD
-v6
-r1
-cCheck dependencies
-cPhaseScriptExecution CMake\ Rules /Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ALL_BUILD.build/Script-8DA60972F3D04CBFABF400A4.sh
-
-N/Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ALL_BUILD.build/Script-8DA60972F3D04CBFABF400A4.sh
-c00000000535A5DEF00000000000000B8
-t1398431215
-s184
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies06804a6f950ab941^adbe4a6f950ab941^---0#1#1#--18"Check dependencies36"A2B967A5-0413-4D57-8FD2-FD0751ABAA71-
-
-CPhaseScriptExecution CMake\ Rules /Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ALL_BUILD.build/Script-8DA60972F3D04CBFABF400A4.sh
-s420124015.292811
-e420124015.313033
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ALL_BUILD.build/Script-8DA60972F3D04CBFABF400A4.sh
-oecho ""
-o
-oecho Build\ all\ projects
-oBuild all projects
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'126"PhaseScriptExecution CMake\ Rules build/DimensionalDataSource.build/Release/ALL_BUILD.build/Script-8DA60972F3D04CBFABF400A4.sh7d414b6f950ab941^ea23506f950ab941^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-420124015#0#8#-0#-----2@26"echo Build\ all\ projects-420124015#9#26#-0#-----2@19"Build all projects-420124015#35#19#-0#-----0#0#1#--326"PhaseScriptExecution CMake\ Rules build/DimensionalDataSource.build/Release/ALL_BUILD.build/Script-8DA60972F3D04CBFABF400A4.sh    cd /Users/Jamin/Kinect/DimensionalDataSource    /bin/sh -c /Users/Jamin/Kinect/DimensionalDataSource/build/DimensionalDataSource.build/Release/ALL_BUILD.build/Script-8DA60972F3D04CBFABF400A4.sh36"06D36527-7530-4C5C-BE6C-485C4A36352D-
-bD1C13592-C46C-4D6B-80A4-7C4BACC24A08
-

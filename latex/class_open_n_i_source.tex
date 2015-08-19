@@ -1,0 +1,67 @@
+\hypertarget{class_open_n_i_source}{\section{Open\+N\+I\+Source Class Reference}
+\label{class_open_n_i_source}\index{Open\+N\+I\+Source@{Open\+N\+I\+Source}}
+}
+
+
+Class that extends the abstract class \hyperlink{class_depth_source}{Depth\+Source}. Links an Open\+N\+I Grabber-\/interface to a private callback method. This method compresses the received frame with a specific \hyperlink{class_compression_strategy}{Compression\+Strategy} and sends it to the backend server using a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}.  
+
+
+
+
+{\ttfamily \#include $<$Open\+N\+I\+Source.\+h$>$}
+
+Inheritance diagram for Open\+N\+I\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_n_i_source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_open_n_i_source_ad7c59826245812024bee0a541f948c91}{\hyperlink{class_open_n_i_source_ad7c59826245812024bee0a541f948c91}{Open\+N\+I\+Source} (\hyperlink{_compression_strategy_8h_a56a83bf6847f4801f4205eb4be237ccf}{Compression} comp)}\label{class_open_n_i_source_ad7c59826245812024bee0a541f948c91}
+
+\begin{DoxyCompactList}\small\item\em Constructor that links the Grabber-\/interface to a private callback method. \end{DoxyCompactList}\item 
+\hypertarget{class_open_n_i_source_ad0d3202f60119589e1d8b5ba94e49e59}{void \hyperlink{class_open_n_i_source_ad0d3202f60119589e1d8b5ba94e49e59}{run\+Depth\+Source} ()}\label{class_open_n_i_source_ad0d3202f60119589e1d8b5ba94e49e59}
+
+\begin{DoxyCompactList}\small\item\em Public method which starts the Open\+N\+I Grabber-\/interface, which results in the camera filming frames. \end{DoxyCompactList}\item 
+\hypertarget{class_open_n_i_source_aa92ab17d6933c1f5447f0f581815a4e6}{void \hyperlink{class_open_n_i_source_aa92ab17d6933c1f5447f0f581815a4e6}{stop\+Depth\+Source} ()}\label{class_open_n_i_source_aa92ab17d6933c1f5447f0f581815a4e6}
+
+\begin{DoxyCompactList}\small\item\em Public method which stops the Grabber-\/interface, making the camera stop filming. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_n_i_source_a2d6f642492a63ebb1cef48e927d52a06}{save\+Frames\+To\+Directory} (const string \&directory\+\_\+, int N=M\+A\+X\+F\+I\+L\+E\+S)
+\begin{DoxyCompactList}\small\item\em Saves a specified number of frames as images in a directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that extends the abstract class \hyperlink{class_depth_source}{Depth\+Source}. Links an Open\+N\+I Grabber-\/interface to a private callback method. This method compresses the received frame with a specific \hyperlink{class_compression_strategy}{Compression\+Strategy} and sends it to the backend server using a \hyperlink{class_d_d_s_client}{D\+D\+S\+Client}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_n_i_source_a2d6f642492a63ebb1cef48e927d52a06}{\index{Open\+N\+I\+Source@{Open\+N\+I\+Source}!save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}}
+\index{save\+Frames\+To\+Directory@{save\+Frames\+To\+Directory}!Open\+N\+I\+Source@{Open\+N\+I\+Source}}
+\subsubsection[{save\+Frames\+To\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}void Open\+N\+I\+Source\+::save\+Frames\+To\+Directory (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{directory\+\_\+, }
+\item[{int}]{N = {\ttfamily MAXFILES}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_open_n_i_source_a2d6f642492a63ebb1cef48e927d52a06}
+
+
+Saves a specified number of frames as images in a directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em directory} & The directory where the frames will be saved \\
+\hline
+\mbox{\tt in}  & {\em N} & The number of frames that have to be saved \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_depth_source_a9e15edc06570770976693b32ef7c5226}{Depth\+Source}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_open_n_i_source_8h}{Open\+N\+I\+Source.\+h}\end{DoxyCompactItemize}
